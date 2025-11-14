@@ -1,0 +1,32 @@
+package atividade_02.src.main.java.model;
+
+import atividade_02.src.main.java.interfaces.ItemEmprestavel;
+
+public abstract class Material implements ItemEmprestavel {
+    private String titulo;
+    private Integer anoPublicacao;
+
+    public abstract void descricao();
+
+    public Material(String titulo, Integer anoPublicacao) {
+        this.titulo = titulo;
+        this.anoPublicacao = anoPublicacao;
+    }
+
+    public String getTitulo() {
+        return this.titulo;
+    }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public Integer getAnoPublicacao() {
+        return this.anoPublicacao;
+    }
+
+    public void setAnoPublicacao(Integer anoPublicacao) {
+        this.anoPublicacao = anoPublicacao;
+    }
+
+}
